@@ -1,7 +1,12 @@
 from pipeline import research_pipeline
 
-prompt=input("Enter a research topic:")
+user = input("Enter a research topic: ")
 
-result=research_pipeline(prompt)
+articles = research_pipeline(user)
 
-print(result)
+for i, article in enumerate(articles, start=1):
+    print(f"\nArticle {i}")
+    print(f"Title : {article['title']}")
+    print(f"URL   : {article['url']}")
+    print("-" * 80)
+    print(article["content"][:800])
