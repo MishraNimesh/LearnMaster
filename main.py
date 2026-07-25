@@ -1,12 +1,28 @@
-from pipeline import research_pipeline
+from pipeline import research_pipeline, ask_question
 
-user = input("Enter a research topic: ")
 
-articles = research_pipeline(user)
+def main():
+    
+    topic = input("Enter a research topic: ")
 
-for i, article in enumerate(articles, start=1):
-    print(f"\nArticle {i}")
-    print(f"Title : {article['title']}")
-    print(f"URL   : {article['url']}")
-    print("-" * 80)
-    print(article["content"][:800])
+    print("\nSearching, scraping, and storing articles...\n")
+    research_pipeline(topic)
+
+    print("Knowledge base is ready!\n")
+
+    while True:
+        question = input("Ask a question (or type 'exit' to quit): ")
+
+        if question.lower() == "exit":
+            print("Goodbye!")
+            break
+
+        answer = ask_question(question)
+
+        print("\nAnswer:")
+        print(answer)
+        print("-" * 80)
+
+
+if __name__ == "__main__":
+    main()
