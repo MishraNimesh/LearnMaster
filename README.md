@@ -1,3 +1,9 @@
+
+
+https://github.com/user-attachments/assets/b03e0527-7cb7-4310-b103-9f6d65d578b6
+
+
+
 # LearnMaster
 
 LearnMaster is an AI-powered learning platform that transforms any topic into a structured learning experience using Retrieval-Augmented Generation (RAG).
@@ -172,9 +178,9 @@ When learning a new technology, I often found myself switching between documenta
 
 ## Demo
 
-https://github.com/user-attachments/assets/YOUR_VIDEO_ASSET_ID
 
-*(To show the video player on GitHub, drag & drop `Screen Recording 2026-07-26 211757.mp4` into the GitHub web editor for README.md to get your exact CDN link)*
+https://github.com/user-attachments/assets/b03e0527-7cb7-4310-b103-9f6d65d578b6
+
 
 ---
 
