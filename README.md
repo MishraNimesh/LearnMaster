@@ -1,8 +1,8 @@
-# StudyMate AI
+# LearnMaster
 
-StudyMate AI is an AI-powered learning platform that transforms any topic into a structured learning experience using Retrieval-Augmented Generation (RAG).
+LearnMaster is an AI-powered learning platform that transforms any topic into a structured learning experience using Retrieval-Augmented Generation (RAG).
 
-Instead of relying only on a language model's internal knowledge, StudyMate AI discovers relevant learning resources, builds a searchable knowledge base, and generates grounded explanations from the retrieved content. The goal is to make learning more structured, reliable, and resource-driven.
+Instead of relying only on a language model's internal knowledge, LearnMaster discovers relevant learning resources, builds a searchable knowledge base, and generates grounded explanations from the retrieved content. The goal is to make learning more structured, reliable, and resource-driven.
 
 ---
 
@@ -92,8 +92,8 @@ Instead of relying only on a language model's internal knowledge, StudyMate AI d
 Clone the repository
 
 ```bash
-git clone https://github.com/MishraNimesh/studymate.git
-cd studymate
+git clone https://github.com/MishraNimesh/learnmaster.git
+cd learnmaster
 ```
 
 Install dependencies
@@ -126,7 +126,7 @@ http://localhost:5000
 ## Project Structure
 
 ```
-StudyMateAI/
+LearnMaster/
 │
 ├── server.py
 ├── pipeline.py
@@ -166,7 +166,7 @@ StudyMateAI/
 
 ## Why I Built This
 
-When learning a new technology, I often found myself switching between documentation, tutorials, YouTube videos, GitHub repositories, and books. StudyMate AI was built to bring these resources together into a single learning workflow. By combining web search, vector retrieval, and large language models, the platform generates structured, source-grounded explanations instead of relying solely on an LLM's internal knowledge.
+When learning a new technology, I often found myself switching between documentation, tutorials, YouTube videos, GitHub repositories, and books. LearnMaster was built to bring these resources together into a single learning workflow. By combining web search, vector retrieval, and large language models, the platform generates structured, source-grounded explanations instead of relying solely on an LLM's internal knowledge.
 
 ---
 
