@@ -170,6 +170,14 @@ When learning a new technology, I often found myself switching between documenta
 
 ---
 
+## Demo
+
+https://github.com/user-attachments/assets/YOUR_VIDEO_ASSET_ID
+
+*(To show the video player on GitHub, drag & drop `Screen Recording 2026-07-26 211757.mp4` into the GitHub web editor for README.md to get your exact CDN link)*
+
+---
+
 ## License
 
 This project is licensed under the MIT License.

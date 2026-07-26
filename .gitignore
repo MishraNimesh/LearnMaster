@@ -7,4 +7,6 @@ studymate.db
 .streamlit/
 .venv/
 .DS_Store
+*.mp4
+
 
