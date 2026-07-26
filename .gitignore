@@ -1,6 +1,10 @@
-.venv/
-__pycache__/
-*.pyc
 .env
+__pycache__/
 chroma_db/
-.vscode/
+*.db
+learnmaster.db
+studymate.db
+.streamlit/
+.venv/
+.DS_Store
+

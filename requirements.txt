@@ -1,7 +1,11 @@
+streamlit
 langchain
 langchain-community
+langchain-chroma
 langchain-google-genai
+langchain-text-splitters
+chromadb
 python-dotenv
 tavily-python
 requests
-dotenv
+beautifulsoup4

@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "C:\\Program Files\\Python314\\python.exe",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}",
+    "C:/Users/Nimesh/AppData/Roaming/Python/Python314/site-packages",
+    "C:/Program Files/Python314/Lib/site-packages"
+  ],
+  "python.analysis.autoSearchPaths": true
+}

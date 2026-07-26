@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnMaster — Organic Interactive Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css?v=10">
+</head>
+<body>
+    <div class="organic-bg">
+        <div class="grid-overlay"></div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+        <div class="glass-overlay"></div>
+    </div>
+
+    <div class="app-container">
+        <header class="navbar">
+            <div class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span class="logo-text">Learn<span class="logo-highlight">Master</span></span>
+            </div>
+            <div class="nav-tagline">Source-Grounded Learning Workspace</div>
+        </header>
+
+        <main class="hero-section" id="heroSection">
+            <div class="hero-badge">
+                <i class="fa-solid fa-sparkles"></i> Next-Gen Learning Companion
+            </div>
+            <h1 class="hero-title">What would you like to <span class="gradient-text">master</span> today?</h1>
+            <p class="hero-subtitle">Enter any subject, technology, or concept to instantly unlock an organic, interactive study guide.</p>
+
+            <form class="search-box" id="searchForm">
+                <div class="search-input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="topicInput" placeholder="e.g. Machine Learning, Quantum Computing, Operating Systems..." autocomplete="off" required>
+                    <button type="submit" class="search-btn" id="searchBtn">
+                        <span>Explore</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="topic-chips">
+                <span class="chip-label">Popular Topics:</span>
+                <button class="chip" data-topic="Machine Learning"><i class="fa-solid fa-robot"></i> Machine Learning</button>
+                <button class="chip" data-topic="System Design"><i class="fa-solid fa-diagram-project"></i> System Design</button>
+                <button class="chip" data-topic="Operating Systems"><i class="fa-solid fa-microchip"></i> Operating Systems</button>
+                <button class="chip" data-topic="Organic Chemistry"><i class="fa-solid fa-flask"></i> Organic Chemistry</button>
+            </div>
+
+            <div class="home-showcase">
+                <div class="showcase-header">
+                    <h3><i class="fa-solid fa-layer-group"></i> Explore AI Learning Modes</h3>
+                    <p>Select any learning format below to start instantly:</p>
+                </div>
+
+                <div class="cards-grid hero-cards-grid">
+                    <div class="action-card glass-card" data-action="detailed">
+                        <div class="card-badge badge-mint">AI Deep-Dive</div>
+                        <div class="action-icon icon-detailed"><i class="fa-solid fa-book-open-reader"></i></div>
+                        <h4>Detailed Explanation</h4>
+                        <ul class="card-bullets">
+                            <li>Core concepts & step-by-step logic</li>
+                            <li>Architecture & detailed breakdown</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="web">
+                        <div class="card-badge badge-blue">Live Web</div>
+                        <div class="action-icon icon-web"><i class="fa-solid fa-globe"></i></div>
+                        <h4>Search the Web</h4>
+                        <ul class="card-bullets">
+                            <li>Official docs & university notes</li>
+                            <li>Real-time tutorials & web guides</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="youtube">
+                        <div class="card-badge badge-red">Video Tutorials</div>
+                        <div class="action-icon icon-youtube"><i class="fa-brands fa-youtube"></i></div>
+                        <h4>YouTube Videos</h4>
+                        <ul class="card-bullets">
+                            <li>Timestamped video tutorials</li>
+                            <li>Visual step-by-step walkthroughs</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="github">
+                        <div class="card-badge badge-purple">Open Source</div>
+                        <div class="action-icon icon-github"><i class="fa-brands fa-github"></i></div>
+                        <h4>GitHub Repositories</h4>
+                        <ul class="card-bullets">
+                            <li>Top open-source projects</li>
+                            <li>Hands-on code & architecture</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="pdf">
+                        <div class="card-badge badge-orange">Academic PDFs</div>
+                        <div class="action-icon icon-pdf"><i class="fa-solid fa-file-pdf"></i></div>
+                        <h4>PDF Documents</h4>
+                        <ul class="card-bullets">
+                            <li>Academic papers & whitepapers</li>
+                            <li>Technical cheat sheets & specs</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="book">
+                        <div class="card-badge badge-yellow">Textbooks</div>
+                        <div class="action-icon icon-book"><i class="fa-solid fa-book-bookmark"></i></div>
+                        <h4>Books & Textbooks</h4>
+                        <ul class="card-bullets">
+                            <li>Standard course textbooks</li>
+                            <li>Peer-reviewed theoretical depth</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="study-plan">
+                        <div class="card-badge badge-pink">4-Week Roadmap</div>
+                        <div class="action-icon icon-plan"><i class="fa-solid fa-calendar-check"></i></div>
+                        <h4>Make a Study Plan</h4>
+                        <ul class="card-bullets">
+                            <li>Structured 4-week roadmap</li>
+                            <li>Weekly targets & mini-projects</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="ask">
+                        <div class="card-badge badge-green">Interactive AI</div>
+                        <div class="action-icon icon-ask"><i class="fa-solid fa-circle-question"></i></div>
+                        <h4>Ask Questions</h4>
+                        <ul class="card-bullets">
+                            <li>Instant AI tutor assistant</li>
+                            <li>Grounded answers & explanations</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="loader-container hidden" id="initialLoader">
+            <div class="pulse-ring"></div>
+            <div class="loader-text">
+                <h3>Crafting your introduction...</h3>
+                <p id="loaderSubtext">Analyzing key concepts & structuring overview</p>
+            </div>
+        </section>
+
+        <section class="workspace hidden" id="workspace">
+            <div class="topic-header">
+                <div>
+                    <span class="topic-badge">Current Topic</span>
+                    <h2 id="activeTopicTitle" class="active-topic-name">Machine Learning</h2>
+                </div>
+                <button class="reset-btn" id="resetBtn">
+                    <i class="fa-solid fa-arrows-rotate"></i> New Topic
+                </button>
+            </div>
+
+            <div class="intro-card glass-card">
+                <div class="card-header">
+                    <div class="header-title">
+                        <span class="card-icon"><i class="fa-solid fa-book-open"></i></span>
+                        <h3>Introduction <span class="time-tag">2-3 min read</span></h3>
+                    </div>
+                </div>
+                <div class="intro-content markdown-body" id="introContent"></div>
+            </div>
+
+            <div class="options-section">
+                <div class="options-header">
+                    <h3>What would you like to do next?</h3>
+                    <p>Click any card below to launch on-demand deep dives and resource fetching.</p>
+                </div>
+
+                <div class="cards-grid" id="cardsGrid">
+                    <div class="action-card glass-card" data-action="detailed">
+                        <div class="action-icon icon-detailed"><i class="fa-solid fa-book-open-reader"></i></div>
+                        <h4>Detailed Explanation</h4>
+                        <ul class="card-bullets">
+                            <li>Core concepts & step-by-step logic</li>
+                            <li>Architecture & detailed breakdown</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="web">
+                        <div class="action-icon icon-web"><i class="fa-solid fa-globe"></i></div>
+                        <h4>Search the Web</h4>
+                        <ul class="card-bullets">
+                            <li>Official docs & university notes</li>
+                            <li>Real-time tutorials & web guides</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="youtube">
+                        <div class="action-icon icon-youtube"><i class="fa-brands fa-youtube"></i></div>
+                        <h4>YouTube Videos</h4>
+                        <ul class="card-bullets">
+                            <li>Timestamped video tutorials</li>
+                            <li>Visual step-by-step walkthroughs</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="github" id="githubCard">
+                        <div class="action-icon icon-github"><i class="fa-brands fa-github"></i></div>
+                        <h4>GitHub Repositories</h4>
+                        <ul class="card-bullets">
+                            <li>Top open-source projects</li>
+                            <li>Hands-on code & architecture</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="pdf">
+                        <div class="action-icon icon-pdf"><i class="fa-solid fa-file-pdf"></i></div>
+                        <h4>PDF Documents</h4>
+                        <ul class="card-bullets">
+                            <li>Academic papers & whitepapers</li>
+                            <li>Technical cheat sheets & specs</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="book">
+                        <div class="action-icon icon-book"><i class="fa-solid fa-book-bookmark"></i></div>
+                        <h4>Books & Textbooks</h4>
+                        <ul class="card-bullets">
+                            <li>Standard course textbooks</li>
+                            <li>Peer-reviewed theoretical depth</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="study-plan">
+                        <div class="action-icon icon-plan"><i class="fa-solid fa-calendar-check"></i></div>
+                        <h4>Make a Study Plan</h4>
+                        <ul class="card-bullets">
+                            <li>Structured 4-week roadmap</li>
+                            <li>Weekly targets & mini-projects</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="action-card glass-card" data-action="ask">
+                        <div class="action-icon icon-ask"><i class="fa-solid fa-circle-question"></i></div>
+                        <h4>Ask Questions</h4>
+                        <ul class="card-bullets">
+                            <li>Instant AI tutor assistant</li>
+                            <li>Grounded answers & explanations</li>
+                        </ul>
+                        <div class="card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-modal hidden" id="resultModal">
+                <div class="modal-backdrop" id="modalBackdrop"></div>
+                <div class="modal-content glass-card">
+                    <div class="modal-header">
+                        <div class="modal-title-wrap">
+                            <span class="modal-icon" id="modalIcon"><i class="fa-solid fa-book-open-reader"></i></span>
+                            <h3 id="modalTitle">Detailed Explanation</h3>
+                        </div>
+                        <button class="modal-close" id="modalClose">&times;</button>
+                    </div>
+
+                    <div class="modal-body" id="modalBody">
+                        <div class="card-spinner" id="modalLoader">
+                            <div class="spinner"></div>
+                            <p>Executing on-demand request...</p>
+                        </div>
+                        <div id="modalContainer" class="markdown-body"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/app.js?v=8"></script>
+</body>
+</html>
